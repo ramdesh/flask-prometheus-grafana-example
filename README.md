@@ -5,7 +5,7 @@ Example deployment of a Flask API using Prometheus and Grafana for metrics and m
 ### Install dependencies
 
 ```
-pip install -r requirements.txt
+pip install -r api/requirements.txt
 ```
 
 ### Set up and run everything using docker-compose
