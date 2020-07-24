@@ -1,0 +1,24 @@
+repos:
+  - repo: https://github.com/ambv/black
+    rev: stable
+    hooks:
+    - id: black
+      language_version: python3.7
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.1.0
+    hooks:
+      - id: trailing-whitespace
+      - id: check-json
+      - id: check-yaml
+      - id: flake8
+      - id: end-of-file-fixer
+      - id: pretty-format-json
+        args: [--autofix, --indent, '4']
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v0.701
+    hooks:
+      - id: mypy
+  - repo: https://github.com/asottile/reorder_python_imports
+    rev: v1.4.0
+    hooks:
+      - id: reorder-python-imports
